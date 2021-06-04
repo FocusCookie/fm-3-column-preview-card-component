@@ -63,6 +63,8 @@ h1 {
 
 p {
   margin-bottom: 25px;
+  overflow-wrap: anywhere;
+  hyphens: none;
 }
 
 .btn {
@@ -102,4 +104,29 @@ p {
 
 .border-radius-all {
   border-radius: 8px;
+}
+
+.opactiy-75 {
+  mix-blend-mode: normal;
+  opacity: 0.75;
+}
+
+@media only screen and (min-width: 781px) {
+  card {
+    display: flex;
+    flex-direction: row;
+    min-height: 500px;
+    max-width: 920px;
+  }
+
+  section {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    min-width: 146px;
+  }
+
+  .btn {
+    margin-top: auto;
+  }
 }
